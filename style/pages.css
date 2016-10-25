@@ -1995,6 +1995,7 @@ section.reviews {
           height: 100%;
           width: auto; }
   /* line 1737, pages.scss */
+
   section.reviews .about {
     position: absolute;
     height: 53.3%;
@@ -2002,7 +2003,6 @@ section.reviews {
     background-blend-mode: multiply;
     background-image: url(https://pp.vk.me/c638328/v638328879/1935/eAkE6GfphFs.jpg);
     background-repeat: no-repeat;
-    background-position: -250px 0px;
     background-size: inherit;
     right: 18vw;
     bottom: 0;
@@ -2014,6 +2014,17 @@ section.reviews {
         -ms-transform: scale(1);
             transform: scale(1);
     z-index: 20; }
+
+  @media screen and (min-width: 967px) and (max-width: 1513px) {
+    section.reviews .about {
+      background-position: 55% 0;
+    }
+  }
+  @media screen and (min-width: 1514px) {
+    section.reviews .about {
+      background-position: -250px 0px;
+    }
+  }
     /* line 1750, pages.scss */
     section.reviews .about h3 {
       color: #feffe2;
